@@ -21,7 +21,7 @@ kubectl apply -f /tmp/sleep-pod.yaml
 
 # non-default ns
 kubectl create namespace non-default
-kubectl label namespace default istio-injection=enabled
+kubectl label namespace non-default istio-injection=enabled
 kubectl apply -n non-default -f /tmp/sleep-pod.yaml
 
 # step1
