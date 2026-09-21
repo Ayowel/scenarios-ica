@@ -3,7 +3,7 @@ apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:
   name: httpbin
-  namespace: default
+  namespace: mtls-strict
 spec:
   action: ALLOW
   rules:
